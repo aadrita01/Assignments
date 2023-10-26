@@ -1,0 +1,33 @@
+package practice;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Q2Test {
+
+	 @Test
+	    public void test1() {
+	        int[] arr = {3, 5, 1, 9, 2, 8};
+	        MinMax result = Q2.findMinMax(arr);
+	        assertEquals(1, result.min);
+	        assertEquals(9, result.max);
+	    }
+	 
+	 @Test
+	    public void test2() {
+	        int[] arr = {-3, -5, -1, -9, -2, -8};
+	        MinMax result = Q2.findMinMax(arr);
+	        assertEquals(-9, result.min);
+	        assertEquals(-1, result.max);
+	    }
+	 
+	 @Test
+	    public void test3() {
+	        int[] arr = {3, 5, 1, 9, 2, 8};
+	        MinMax result = Q2.findMinMax(arr);
+	        assertEquals(-9, result.min);
+	        assertEquals(-1, result.max);
+	    }
+
+}

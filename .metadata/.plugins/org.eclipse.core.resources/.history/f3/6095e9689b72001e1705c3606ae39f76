@@ -1,0 +1,29 @@
+package practice;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class MinMaxFinderTest {
+   
+	@Test
+	void test1() {
+		int[] exp= {3,21};
+		int[] act=MinMaxFinder.findMinMax(new int[] {11,3,6,12,19,21});
+		assertArrayEquals(exp, act);		
+	}
+	
+	@Test
+	void test2() {
+		int[] exp= {3,21};
+		int[] act=MinMaxFinder.findMinMax(new int[] {4,21,96,45,66});
+		assertArrayEquals(exp, act);		
+	}
+	
+	@Test
+	void test3() {
+		int[] exp= {1,99};
+		int[] act=MinMaxFinder.findMinMax(new int[] {7,1,4,9,34,78,99});
+		assertArrayEquals(exp, act);		
+	}
+
+}

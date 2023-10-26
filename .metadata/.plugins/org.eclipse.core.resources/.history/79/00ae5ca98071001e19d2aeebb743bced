@@ -1,0 +1,18 @@
+package practice;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class mathTest {
+
+	@Test
+	void test() {
+		math ob=new math();
+		int exp=3;
+		int act=ob.add(1,2);
+		assertEquals(exp, act);
+				
+	}
+
+}
